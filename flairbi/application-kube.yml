@@ -103,6 +103,13 @@ jhipster:
       host: localhost
       port: 5000
       queueSize: 512
+  cors:
+    allowed-origins: "https://flair-bi.d2-pt.aws.kindredgroup.com"
+    allowed-methods: "*"
+    allowed-headers: "*"
+    exposed-headers: "Authorization,Link,X-Total-Count"
+    allow-credentials: false
+    max-age: 1800
 
   # ===================================================================
   # Ldap connection properties
